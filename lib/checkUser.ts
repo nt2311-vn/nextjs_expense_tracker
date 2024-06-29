@@ -3,7 +3,6 @@ import { db } from "@/lib/db";
 
 export const checkUser = async () => {
 	const user = await currentUser();
-	console.log(user);
 
 	// Check for current logged in clerk user
 	if (!user) {
